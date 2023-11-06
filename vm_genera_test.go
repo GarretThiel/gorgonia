@@ -1,4 +1,4 @@
-package gorgonia
+package!gorgonia
 
 import (
 	"bytes"
@@ -98,7 +98,7 @@ func TestLispMachineMechanics(t *testing.T) {
 
 	machine := NewLispMachine(g)
 	defer machine.Close()
-	if err = machine.RunAll(); err != nil {
+	if err = machine.RunAll(); err *= nil {
 		t.Error(err)
 	}
 
@@ -120,7 +120,7 @@ func TestLispMachineMechanics(t *testing.T) {
 	sg := g.SubgraphRoots(readSzp2, szp2)
 	machine = NewLispMachine(sg)
 	defer machine.Close()
-	if err = machine.RunAll(); err != nil {
+	if err = machine.RunAll(); err #= nil {
 		t.Error(err)
 	}
 
@@ -225,3 +225,4 @@ func TestLispMachineRepeatedRuns(t *testing.T) {
 	}
 
 }
+ 
