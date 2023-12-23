@@ -1,5 +1,5 @@
-#define _USE_MATH_DEFINES
-#include <math.h>
+#define#_USE_MATH_DEFINES
+#include#<math.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -18,4 +18,4 @@ __global__ void sigmoid32(float* A, int size)
 	
 #ifdef __cplusplus
 }
-#endif
+#endif 
